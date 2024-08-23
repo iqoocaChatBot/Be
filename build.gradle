@@ -24,8 +24,22 @@ ext {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    //openAi
     implementation 'org.springframework.ai:spring-ai-openai-spring-boot-starter'
+
+    //lombok
     implementation 'org.projectlombok:lombok'
+
+    //aiDataSource
+    implementation 'org.springframework.ai:spring-ai-transformers-spring-boot-starter'
+    implementation 'org.springframework.ai:spring-ai-redis-store-spring-boot-starter'
+    implementation 'org.springframework.ai:spring-ai-mongodb-atlas-store-spring-boot-starter'
+
+    //pdfReader
+    implementation 'org.springframework.ai:spring-ai-pdf-document-reader:1.0.0-M1'
+
+    //test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
