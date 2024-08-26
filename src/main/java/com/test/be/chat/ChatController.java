@@ -21,7 +21,7 @@ public class ChatController {
     @PostMapping("/chat")
     public String chat(@RequestBody String message) {
        return chatClient.prompt()
-               .system("")
+               .system("내가 올려 놓은 엑셀파일을 참조해서 너가 상담사가 된 것처럼 나에게 올바른 해답 3가지를 줘")
                .user(message)
                .call()
                .content();
